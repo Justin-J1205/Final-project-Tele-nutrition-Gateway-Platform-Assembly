@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://encpt.local/schemas/monitoring.json",
+  "title": "Step 4 - Nutrition Monitoring & Evaluation",
+  "type": "object",
+  "properties": {
+    "code": { "enum": ["FH-1.1", "FH-1.2", "AD-1.1"] },
+    "goal": { "type": "string" }
+  },
+  "required": ["code"],
+  "additionalProperties": false
+}

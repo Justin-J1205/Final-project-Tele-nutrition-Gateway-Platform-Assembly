@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://encpt.local/schemas/intervention.json",
+  "title": "Step 3 - Nutrition Intervention",
+  "type": "object",
+  "properties": {
+    "codes": {
+      "type": "array",
+      "items": { "enum": ["ND-1", "E-1", "E-2", "C-1", "C-2"] },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "details": { "type": "string" }
+  },
+  "required": ["codes"],
+  "additionalProperties": false
+}

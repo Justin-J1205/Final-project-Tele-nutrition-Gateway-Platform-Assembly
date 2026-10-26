@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://encpt.local/schemas/note.json",
+  "title": "Complete ADIME clinical note",
+  "type": "object",
+  "properties": {
+    "patientName": { "type": "string", "minLength": 1 },
+    "assessment": { "$ref": "https://encpt.local/schemas/assessment.json" },
+    "diagnosis": { "$ref": "https://encpt.local/schemas/diagnosis.json" },
+    "intervention": { "$ref": "https://encpt.local/schemas/intervention.json" },
+    "monitoring": { "$ref": "https://encpt.local/schemas/monitoring.json" }
+  },
+  "required": ["patientName", "assessment", "diagnosis", "intervention", "monitoring"],
+  "additionalProperties": false
+}

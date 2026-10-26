@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://encpt.local/schemas/assessment.json",
+  "title": "Step 1 - Nutrition Assessment",
+  "type": "object",
+  "properties": {
+    "FH": { "type": "string", "minLength": 1, "description": "Food/Nutrition-Related History" },
+    "AD": { "type": "string", "minLength": 1, "description": "Anthropometric Measurements" },
+    "BD": { "type": "string", "minLength": 1, "description": "Biochemical Data, Medical Tests and Procedures" },
+    "PD": { "type": "string", "minLength": 1, "description": "Nutrition-Focused Physical Findings" },
+    "CH": { "type": "string", "minLength": 1, "description": "Client History" }
+  },
+  "additionalProperties": false,
+  "minProperties": 1
+}

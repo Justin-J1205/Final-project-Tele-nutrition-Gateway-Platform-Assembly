@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://encpt.local/schemas/diagnosis.json",
+  "title": "Step 2 - Nutrition Diagnosis (PES statement)",
+  "type": "object",
+  "properties": {
+    "code": { "enum": ["NI-1.2", "NI-1.3", "NI-2.1", "NI-2.2", "NB-1.1", "NB-1.7"], "description": "Problem (P) - eNCPT diagnosis term" },
+    "etiology": { "type": "string", "minLength": 1, "description": "Etiology (E) - related to..." },
+    "signs": { "type": "string", "minLength": 1, "description": "Signs/Symptoms (S) - as evidenced by..." }
+  },
+  "required": ["code", "etiology", "signs"],
+  "additionalProperties": false
+}
